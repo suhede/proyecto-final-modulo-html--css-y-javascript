@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="autor" content="Susana Heredia" />
+    <meta name="description" content="pagina web para restaurante" />
+    <meta name="keywords" content="menu, reserva, contacto" />
+    <title>restaurante al gusto</title>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GOOGLE ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/reserva.css" />
+<!-- SCRIPT API CALENDARIO -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.10/locale/es/index.min.js"
+      integrity="sha512-xCMh+IX6X2jqIgak2DBvsP6DNPne/t52lMbAUJSjr3+trFn14zlaryZlBcXbHKw8SbrpS0n3zlqSVmZPITRDSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.10/index.global.js"
+      integrity="sha512-zAadCzZHXo/f5A/3uhF50bZXahdYNqisNgKKniyoJJVpp27b2bR82N4hPLGj3/qBEh3tGZ9SYGmSA1jpdtNF5A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.10/locale/es/index.global.min.js"
+      integrity="sha512-JCQkxdym6GmQ+AFVioDUq8dWaWN6tbKRhRyHvYZPupQ6DxpXzkW106FXS1ORgo/m3gxtt5lHRMqSdm2OfPajtg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.10/locale/es/index.js"
+      integrity="sha512-bBl4oHIOeYj6jgOLtaYQO99mCTSIb1HD0ImeXHZKqxDNC7UPWTywN2OQRp+uGi0kLurzgaA3fm4PX6e2Lnz9jQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+<!-- --------------------------------------------------------------------------------------------------- -->
+  <body>
+    <!-- ---------HEADER-------------------- -->
+    <header class="header">
+      <div class="header__container">
+        <h1 class="header__h1">al gusto</h1>
+
+        <nav class="header__nav">
+          <ul class="nav__ul">
+            <li class="nav__ul--li">
+              <a href="/index.html" class="nav__ul--a">inicio</a>
+            </li>
+            <li class="nav__ul--li">
+              <a href="/html/nosotros.html" target="_blank" class="nav__ul--a"
+                >nosotros</a
+              >
+            </li>
+            <li class="nav__ul--li">
+              <a href="/html/menu.html" target="_blank" class="nav__ul--a"
+                >menu</a
+              >
+            </li>
+            <li class="nav__ul--li">
+              <a href="/html/eventos.html" target="_blank" class="nav__ul--a"
+                >eventos</a
+              >
+            </li>
+            <li class="nav__ul--li">
+              <a href="/html/contacto.html" class="nav__ul--a">contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- ------------------MAIN-------------------->
+    <main>
+      <section class="reserva">
+        <div id="reserva__disponibilidad" class="reserva__disponibilidad">
+          <button
+            id="reserva__button"
+            type="submit"
+            class="reserva__button" >
+            Comprobar disponibilidad
+          </button>
+        </div>
+        <div id="container" class="calendario__container">
+          <div id="calendar" class="calendario"></div>
+          <div id="infoContainer" class="info">
+            <h2 id="titulo" class="titulo"></h2>
+            <p id="comensales" class="info__p"></p>
+            <p id="servicio" class="info__p"></p>
+            <p id="nombre" class="info__p"></p>
+            <p id="telefono" class="info__p"></p>
+            <p id="email" class="info__p"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!----------------FOOTER----------------------------->
+    <footer class="footer">
+      <div class="footer__app">
+        <!--- BOOTSTRAP ICONS -->
+        <div class="footer__app--h4">
+          <h4 class="app__h4">disponible mobile app :</h4>
+        </div>
+        <div class="google__play">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-google-play footer__icon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295M1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"
+            />
+          </svg>
+          <p class="app__p">Google Play</p>
+          <i class="bi bi-google-play"></i>
+        </div>
+        <div class="apple">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-apple footer__icon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"
+            />
+            <path
+              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"
+            />
+          </svg>
+          <p class="app__p">Apple Store</p>
+          <i class="bi bi-apple"></i>
+        </div>
+      </div>
+
+      <div class="footer__derechos">
+        <p class="footer__derechos--p">
+          Todos los derechos reservados 2023 restaurante al gusto
+        </p>
+        <p class="footer__derechos--p">Politicas de privacidad y cookies</p>
+        <p class="footer__derechos--p">Aviso legal</p>
+        <p class="footer__derechos--p">Diseño: Susana Heredia</p>
+      </div>
+    </footer>
+    <script defer src="/javascript/reserva.js"></script>
+    
+  </body>
+</html>

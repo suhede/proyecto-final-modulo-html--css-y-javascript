@@ -1,0 +1,1180 @@
+/* Declaracion variables: colores y fonts utilizadas */
+:root {
+  --rojo: rgb(155, 20, 20);
+  --amarillo-gold: goldenrod;
+  --blanco-arena: rgb(229, 220, 220);
+  --negro: black;
+  --tipo-titulo: "Playfair Display", "serif";
+  --tipo-principal: "Inter", "sans-serif";
+}
+/* --------------------HEADER----------------------------- */
+.header {
+  width: 100%;
+}
+.header__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__h1 {
+  text-transform: uppercase;
+  font-family: var(--tipo-titulo);
+  font-size: 1.5em;
+  color: var(--rojo);
+}
+.nav__ul {
+  display: flex;
+  align-items: center;
+}
+.nav__ul--li {
+  margin: 20px;
+  text-transform: uppercase;
+  font-family: var(--tipo-principal);
+}
+.nav__ul--a:hover {
+  color: var(--amarillo-gold);
+  font-weight: bold;
+}
+.header__button {
+  background-color: var(--amarillo-gold);
+  text-transform: uppercase;
+  font-family: var(--tipo-principal);
+  width: 130px;
+  padding: 15px;
+  margin: 10px;
+}
+.header__button:hover{
+  border: 1px solid var(--rojo);
+  background-color: transparent;
+  color: var(--rojo);
+}
+/* -----------------------MAIN--------------------------- */
+/* ----------------PRMERA SECTION------------------------ */
+.menu {
+  width: 100%;
+}
+.menu__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__div--texto {
+  width: 35%;
+  margin: 20px 10px;
+}
+.menu__h2 {
+  text-transform: uppercase;
+  font-family: var(--tipo-titulo);
+  font-size: 2em;
+  color: var(--rojo);
+  margin: 10px 0px;
+  padding: 10px;
+}
+.menu__p {
+  font-family: var(--tipo-principal);
+  padding: 5px;
+}
+.menu__div--img {
+  width: 60%;
+  margin: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.menu__box {
+  width: 49%;
+}
+.img__menu {
+  width: 100%;
+}
+
+/* ----------------SEGUNDA SECTION------------------------ */
+.entrantes {
+  width: 100%;
+}
+.entrantes__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.entrantes__div--img {
+  width: 40%;
+  margin: 20px 10px;
+}
+.entrantes__div--texto {
+  width: 50%;
+  margin: 20px 10px;
+}
+.entrantes__h3 {
+  text-transform: uppercase;
+  font-family: var(--tipo-titulo);
+  font-size: 1.5em;
+  color: var(--rojo);
+  margin: 10px 0px;
+  padding: 10px;
+}
+.entrantes__h4 {
+  text-transform: uppercase;
+  font-family: var(--tipo-titulo);
+  font-size: 1em;
+  color: var(--rojo);
+}
+.entrantes__p {
+  font-family: var(--tipo-principal); 
+}
+/* ----------------TERCERA SECTION------------------------ */
+.ensaladas {
+  width: 100%;
+}
+.ensaladas__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ensaladas__div--texto {
+  width: 50%;
+  margin: 20px 10px;
+}
+.ensaladas__h3 {
+  text-transform: uppercase;
+  font-family: var(--tipo-titulo);
+  font-size: 1.5em;
+  color: var(--rojo);
+  margin: 10px 0px;
+  padding: 10px;
+}
+.ensaladas__h4 {
+  text-transform: uppercase;
+  font-family: var(--tipo-titulo);
+  font-size: 1em;
+  color: var(--rojo);
+}
+.ensaladas__p {
+  font-family: var(--tipo-principal);
+}
+.ensaladas__div--img {
+  width: 40%;
+  margin: 20px 10px;
+}
+/*------------CUARTA SECTION------------*/
+.principal {
+  width: 100%;
+}
+.principal__container--uno,
+.principal__container--dos,
+.principal__container--tres {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.principal__uno--img,
+.principal__dos--img,
+.principal__tres--img {
+  width: 40%;
+  margin: 20px 10px;
+}
+.principal__uno--texto,
+.principal__dos--texto,
+.principal__tres--texto {
+  width: 50%;
+  margin: 20px 10px;
+}
+.principal__h3 {
+  text-transform: uppercase;
+  font-family: var(--tipo-titulo);
+  font-size: 1.5em;
+  color: var(--rojo);
+  margin: 10px 0px;
+  padding: 10px;
+}
+.principal__h4 {
+  text-transform: uppercase;
+  font-family: var(--tipo-titulo);
+  font-size: 1em;
+  color: var(--rojo);
+}
+.principal__p {
+  font-family: var(--tipo-principal);
+}
+/* -----------------QUINTA SECTION----------- */
+.postres {
+  width: 100%;
+}
+.postres__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.postres__div--img {
+  width: 60%;
+  min-height: 20vh;
+  margin: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.postres__box {
+  width: 49%;
+}
+.postres__img {
+  width: 100%;
+}
+.postres__div--texto {
+  width: 40%;
+  margin: 20px 10px;
+  padding: 5px;
+}
+.postres__h3 {
+  text-transform: uppercase;
+  font-family: var(--tipo-titulo);
+  font-size: 1.5em;
+  color: var(--rojo);
+  margin: 10px 0px;
+  padding: 10px;
+}
+.postres__h4 {
+  text-transform: uppercase;
+  font-family: var(--tipo-titulo);
+  font-size: 1em;
+  color: var(--rojo);
+}
+/* ------------ SEXTA SECTION--------------- */
+.bebidas {
+  width: 100%;
+}
+.bebidas__container,
+.bebidas__container--vinos,
+.bebidas__container--cocteles {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bebidas__div--texto,
+.bebidas__vinos--texto,
+.bebidas__cocteles--texto {
+  width: 40%;
+  margin: 20px 10px;
+  padding: 10px;
+}
+.bebidas__h3 {
+  text-transform: uppercase;
+  font-family: var(--tipo-titulo);
+  font-size: 1.5em;
+  color: var(--rojo);
+  margin: 10px 0px;
+  padding: 10px;
+}
+.bebidas__h4 {
+  text-transform: uppercase;
+  font-family: var(--tipo-titulo);
+  font-size: 1em;
+  color: var(--rojo);
+}
+.bebidas__p {
+  font-family: var(--tipo-principal);
+}
+.bebidas__div--img,
+.bebidas__vinos--img,
+.bebidas__cocteles--img {
+  width: 60%;
+  margin: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.bebidas__box,
+.bebida__vinos--box,
+.bebidas__cocteles--box {
+  width: 49%;
+}
+.img__bebidas,
+.img__vinos,
+.img__cocteles {
+  width: 100%;
+}
+/* -----------FOOTER-------- */
+.footer {
+  width: 100%;
+}
+.footer__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--negro);
+}
+.footer__app {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.app__h5 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--tipo-titulo);
+  font-size: 1em;
+  color: var(--amarillo-gold);
+  margin: 20px 0px;
+}
+.google__play,
+.apple {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  border: 1px solid var(--blanco-arena);
+  border-radius: 5px;
+}
+.app__p {
+  color: var(--blanco-arena);
+  font-size: 0.8em;
+  font-family: var(--tipo-principal);
+}
+.footer__icon {
+  margin: 10px;
+  color: var(--amarillo-gold);
+}
+.footer__derechos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.footer__derechos--p {
+  color: var(--blanco-arena);
+  font-size: 0.9em;
+  font-family: var(--tipo-principal);
+}
+/* -------------MEDIA QUERIES------------------ */
+
+@media screen and (min-width: 389px) and (max-width: 540px) {
+  /* --------------HEADER------------------------- */
+  .header {
+    width: 100%;
+    background-color: var(--blanco-arena);
+  }
+  .header__container {
+    display: block;
+  }
+  .header__h1 {
+    font-size: 1.1em;
+    padding: 10px;
+  }
+  .nav__ul {
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__ul--li {
+    font-size: 0.7em;
+    margin: 5px;
+  }
+  
+  /* ------------PRIMERA SECTION---------------- */
+  .menu {
+    width: 100%;
+  }
+  .menu__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__div--img {
+    width: 100%;
+    margin: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .menu__div--texto {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  .menu__h2 {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .menu__p {
+    padding: 5px;
+    text-align: center;
+  }
+
+  /* ---------------SEGUNDA SECTION---------------- */
+  .entrantes {
+    width: 100%;
+  }
+  .entrantes__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .entrantes__div--img,
+  .entrantes__div--texto {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  .entrantes__div--texto {
+    order: 1;
+  }
+  .entrantes__div--img {
+    order: 2;
+  }
+  .entrantes__h3 {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .entrantes__h4 {
+    font-size: 1em;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+  }
+  .entrantes__p {
+    text-align: center;
+    padding: 5px;
+  }
+  /* --------------TERCERA SECTION------------------ */
+  .ensaladas {
+    width: 100%;
+  }
+  .ensaladas__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ensaladas__div--texto,
+  .ensaladas__div--img {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  .ensaladas__h3 {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .ensaladas__h4 {
+    font-size: 1em;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+  }
+  .ensaladas__p {
+    text-align: center;
+    padding: 5px;
+  }
+  /* --------------CUARTA SECTION----------------- */
+  .principal {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .principal__container--uno,
+  .principal__container--dos,
+  .principal__container--tres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 5px;
+  }
+  .principal__uno--img,
+  .principal__dos--img,
+  .principal__tres--img,
+  .principal__uno--texto,
+  .principal__dos--texto,
+  .principal__tres--texto {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  .principal__uno--texto,
+  .principal__tres--texto {
+    order: 1;
+  }
+  .principal__uno--img,
+  .principal__tres--img {
+    order: 2;
+  }
+  .principal__h3 {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .principal__h4 {
+    font-size: 1em;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+  }
+  .principal__p {
+    text-align: center;
+    padding: 5px;
+  }
+  /* --------------QUINTA SECTION------------------ */
+
+  .postres {
+    width: 100%;
+  }
+  .postres__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .postres__div--img {
+    width: 100%;
+    margin: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    order: 2;
+  }
+  .postres__box {
+    width: 49%;
+  }
+  .postres__img {
+    width: 100%;
+  }
+  .postres__div--texto {
+    width: 100%;
+    margin: 10px 5px;
+    order: 1;
+  }
+  .postres__h3 {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .postres__h4 {
+    font-size: 1em;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+  }
+  .postres__p {
+    text-align: center;
+    padding: 5px;
+  }
+
+  /* -----------------SEXTA SECTION------------------- */
+  .bebidas {
+    width: 100%;
+  }
+  .bebidas__container,
+  .bebidas__container--vinos,
+  .bebidas__container--cocteles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bebidas__div--texto,
+  .bebidas__vinos--texto,
+  .bebidas__cocteles--texto {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  .bebidas__h3 {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .bebidas__h4 {
+    font-size: 1em;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+  }
+  .bebidas__vinos--texto {
+    order: 1;
+  }
+  .bebidas__vinos--img {
+    order: 2;
+  }
+  .bebidas__div--img,
+  .bebidas__vinos--img,
+  .bebidas__cocteles--img {
+    width: 100%;
+    margin: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .bebidas__box,
+  .bebida__vinos--box,
+  .bebidas__cocteles--box {
+    width: 49%;
+  }
+  .img__bebidas,
+  .img__vinos,
+  .img__cocteles {
+    width: 100%;
+  }
+  .bebidas__p {
+    text-align: center;
+    padding: 5px;
+  }
+
+  /* --------------------FOOTER-----------------------*/
+  .footer__app {
+    width: 100%;
+  }
+  .app__h6 {
+    font-size: 0.8em;
+  }
+  .app__p {
+    font-size: 0.5em;
+  }
+  .footer__icon {
+    margin: 5px;
+  }
+  .footer__derechos {
+    display: none;
+  }
+}
+/* --------------------------------------------- */
+@media screen and (min-width: 541px) and (max-width: 768px) {
+  /* --------------HEADER------------------------- */
+  .header {
+    width: 100%;
+    background-color: var(--blanco-arena);
+  }
+  .header__container {
+    display: block;
+  }
+  .header__h1 {
+    font-size: 1.3em;
+    padding: 20px;
+  }
+  .nav__ul {
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__ul--li {
+    font-size: 1em;
+    margin: 10px;
+  }
+  .header__button {
+    display: none;
+  }
+  /* ------------PRIMERA SECTION---------------- */
+  .menu {
+    width: 100%;
+  }
+  .menu__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__div--img,
+  .menu__div--texto {
+    width: 100%;
+    margin: 10px 5px;
+    gap: 5px;
+  }
+  .menu__div--img {
+    gap: 5px;
+  }
+  .menu__h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 8px;
+    text-decoration: underline;
+  }
+  .menu__p {
+    text-align: center;
+    padding: 5px;
+  }
+
+  /* ---------------SEGUNDA SECTION---------------- */
+  .entrantes {
+    width: 100%;
+  }
+  .entrantes__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .entrantes__div--img,
+  .entrantes__div--texto {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  .entrantes__div--texto {
+    order: 1;
+  }
+  .entrantes__div--img {
+    order: 2;
+  }
+  .entrantes__h3 {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 5px 0px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .entrantes__h4 {
+    font-size: 1em;
+    text-align: center;
+    margin: 5px 0px;
+    padding: 5px;
+  }
+  .entrantes__p {
+    text-align: center;
+    padding: 5px;
+  }
+  /* --------------TERCERA SECTION------------------ */
+  .ensaladas {
+    width: 100%;
+  }
+  .ensaladas__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ensaladas__div--texto,
+  .ensaladas__div--img {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  .ensaladas__h3 {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 5px 0px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .ensaladas__h4 {
+    font-size: 1em;
+    text-align: center;
+    margin: 5px 0px;
+    padding: 5px;
+  }
+  .ensaladas__p {
+    text-align: center;
+    padding: 5px;
+  }
+  /* --------------CUARTA SECTION----------------- */
+  .principal {
+    width: 100%;
+  }
+  .principal__container--uno,
+  .principal__container--dos,
+  .principal__container--tres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .principal__uno--img,
+  .principal__dos--img,
+  .principal__tres--img,
+  .principal__uno--texto,
+  .principal__dos--texto,
+  .principal__tres--texto {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  .principal__uno--texto,
+  .principal__tres--texto {
+    order: 1;
+  }
+  .principal__uno--img,
+  .principal__tres--img {
+    order: 2;
+  }
+  .principal__h3 {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 5px 0px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .principal__h4 {
+    font-size: 1em;
+    text-align: center;
+    margin: 5px 0px;
+    padding: 5px;
+  }
+  .principal__p {
+    text-align: center;
+    padding: 5px;
+  }
+  /* --------------QUINTA SECTION------------------ */
+
+  .postres {
+    width: 100%;
+  }
+  .postres__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .postres__div--img,
+  .postres__div--texto {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  .postres__div--texto {
+    order: 1;
+  }
+  .postres__div--img {
+    gap: 5px;
+    order: 2;
+  }
+  .postres__h3 {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 5px 0px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .postres__h4 {
+    font-size: 1em;
+    text-align: center;
+    margin: 5px 0px;
+    padding: 5px;
+  }
+  .postres__p {
+    text-align: center;
+    padding: 5px;
+  }
+
+  /* -----------------SEXTA SECTION------------------- */
+  .bebidas {
+    width: 100%;
+  }
+  .bebidas__container,
+  .bebidas__container--vinos,
+  .bebidas__container--cocteles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bebidas__div--texto,
+  .bebidas__vinos--texto,
+  .bebidas__cocteles--texto {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  .bebidas__vinos--texto {
+    order: 1;
+  }
+  .bebidas__h3 {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 5px 0px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .bebidas__h4 {
+    font-size: 1em;
+    text-align: center;
+    margin: 5px 0px;
+    padding: 5px;
+  }
+  .bebidas__div--img,
+  .bebidas__vinos--img,
+  .bebidas__cocteles--img {
+    width: 100%;
+    margin: 10px 5px;
+    gap: 5px;
+  }
+  .bebidas__vinos--img {
+    order: 2;
+  }
+  .bebidas__p {
+    text-align: center;
+    padding: 5px;
+  }
+
+  /* --------------------FOOTER-----------------------*/
+  .footer__app {
+    width: 100%;
+  }
+  .app__h6 {
+    font-size: 0.8em;
+  }
+  .app__p {
+    font-size: 0.7em;
+  }
+  .footer__derechos {
+    display: none;
+  }
+}
+/* -------------------------------------------------------*/
+@media screen and (min-width: 769px) and (max-width: 960px) {
+  /* --------------------HEADER-----------------------*/
+  .header {
+    width: 100%;
+  }
+  .header__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .header__h1 {
+    font-size: 1.3em;
+    padding: 20px;
+  }
+  .nav__ul--li {
+    margin: 10px;
+  }
+  .header__button {
+    padding: 15px;
+  }
+  
+  /* ------------PRIMERA SECTION---------------- */
+  .menu {
+    width: 100%;
+  }
+  .menu__container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .menu__div--img {
+    width: 65%;
+    margin: 30px 10px;
+  }
+  .menu__div--texto {
+    width: 40%;
+    margin: 30px 10px;
+  }
+  .menu__h2 {
+    font-size: 1.7em;
+    margin: 5px 0px;
+    padding: 5px;
+  }
+  .menu__p {
+    padding: 5px;
+  }
+
+  /* ---------------SEGUNDA SECTION---------------- */
+  .entrantes {
+    width: 100%;
+  }
+  .entrantes__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .entrantes__div--img,
+  .entrantes__div--texto {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  .entrantes__h3 {
+    text-align: center;
+    font-size: 1.6em;
+    margin: 5px 0px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .entrantes__h4 {
+    text-align: center;
+    font-size: 1em;
+    margin: 5px 0px;
+    padding: 5px;
+  }
+  .entrantes__p {
+    text-align: center;
+    padding: 5px;
+  }
+  /* --------------TERCERA SECTION------------------ */
+  .ensaladas {
+    width: 100%;
+  }
+  .ensaladas__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ensaladas__div--texto,
+  .ensaladas__div--img {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  .ensaladas__div--texto {
+    order: 2;
+  }
+  .ensaladas__div--img {
+    order: 1;
+  }
+  .ensaladas__h3 {
+    text-align: center;
+    font-size: 1.6em;
+    margin: 5px 0px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .ensaladas__h4 {
+    text-align: center;
+    font-size: 1em;
+    margin: 5px 0px;
+    padding: 5px;
+  }
+  .ensaladas__p {
+    text-align: center;
+    padding: 5px;
+  }
+  /* --------------CUARTA SECTION----------------- */
+  .principal {
+    width: 100%;
+  }
+  .principal__container--uno,
+  .principal__container--dos,
+  .principal__container--tres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .principal__uno--img,
+  .principal__dos--img,
+  .principal__tres--img,
+  .principal__uno--texto,
+  .principal__dos--texto,
+  .principal__tres--texto {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  .principal__dos--img {
+    order: 1;
+  }
+  .principal__dos--texto {
+    order: 2;
+  }
+  .principal__h3 {
+    text-align: center;
+    font-size: 1.6em;
+    margin: 5px 0px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .principal__h4 {
+    text-align: center;
+    font-size: 1em;
+    margin: 5px 0px;
+    padding: 5px;
+  }
+  .principal__p {
+    text-align: center;
+    padding: 5px;
+  }
+  /* --------------QUINTA SECTION------------------ */
+
+  .postres {
+    width: 100%;
+  }
+  .postres__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .postres__div--img {
+    width: 100%;
+  }
+  .postres__box {
+    width: 49%;
+  }
+  .postres__img,
+  .postres__div--texto {
+    width: 100%;
+    margin: 10pz 5px;
+  }
+  .postres__h3 {
+    text-align: center;
+    font-size: 1.6em;
+    margin: 5px 0px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .postres__h4 {
+    text-align: center;
+    font-size: 1em;
+    margin: 5px 0px;
+    padding: 5px;
+  }
+  .postres__p {
+    text-align: center;
+    padding: 5px;
+  }
+
+  /* -----------------SEXTA SECTION------------------- */
+  .bebidas {
+    width: 100%;
+  }
+  .bebidas__container,
+  .bebidas__container--vinos,
+  .bebidas__container--cocteles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bebidas__div--texto,
+  .bebidas__vinos--texto,
+  .bebidas__cocteles--texto,
+  .bebidas__div--img,
+  .bebidas__vinos--img,
+  .bebidas__cocteles--img {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  .bebidas__div--texto,
+  .bebidas__cocteles--texto {
+    order: 2;
+  }
+  .bebidas__div--img,
+  .bebidas__cocteles--img {
+    order: 1;
+  }
+  .bebidas__h3 {
+    text-align: center;
+    font-size: 1.6em;
+    margin: 5px 0px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .bebidas__h4 {
+    text-align: center;
+    font-size: 1em;
+    margin: 5px 0px;
+    padding: 5px;
+  }
+  .bebidas__p {
+    text-align: center;
+    padding: 5px;
+  }
+
+  /* --------------------FOOTER-----------------------*/
+
+  .footer__derechos--p {
+    font-size: 0.7em;
+  }
+}

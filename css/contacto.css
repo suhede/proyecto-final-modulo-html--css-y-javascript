@@ -1,0 +1,389 @@
+/* Declaracion variables: colores y fonts utilizadas */
+:root {
+  --rojo: rgb(155, 20, 20);
+  --amarillo-gold: goldenrod;
+  --blanco-arena: rgb(229, 220, 220);
+  --negro: black;
+  --tipo-titulo: "Playfair Display", "serif";
+  --tipo-principal: "Inter", "sans-serif";
+}
+/* -----------------------HEADER--------------------------- */
+.header {
+  width: 100%;
+}
+.header__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__h1 {
+  text-transform: uppercase;
+  font-family: var(--tipo-titulo);
+  font-size: 1.5em;
+  color: var(--rojo);
+}
+.nav__ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav__ul--li {
+  margin: 15px;
+  text-transform: uppercase;
+  font-family: var(--tipo-principal);
+}
+.nav__ul--a:hover {
+  color: var(--amarillo-gold);
+  font-weight: bold;
+}
+
+/* -----------------------MAIN--------------------------- */
+.contacto {
+  width: 100%;
+  margin: 60px 0px;
+}
+.contacto__container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.contacto__h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: var(--tipo-titulo);
+  font-size: 2em;
+  color: var(--rojo);
+  margin: 20px;
+  padding: 5px;
+}
+.contacto__direccion {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.contacto__box {
+  width: 28%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contacto__p {
+  text-align: center;
+  font-size: 1em;
+  font-family: var(--tipo-principal);
+  padding: 5px;
+}
+.material-symbols-outlined {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  cursor: pointer;
+}
+.contacto__redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+.contacto__icon {
+  margin: 1em;
+  box-shadow: 1px 1px 2px var(--amarillo-gold);
+  cursor: pointer;
+}
+
+/* -------FOOTER--------- */
+.footer {
+  width: 100%;
+}
+.footer__container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blanco-arena);
+}
+.footer__form--h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--tipo-titulo);
+  font-size: 1.3em;
+  color: var(--rojo);
+  margin: 20px 0px;
+}
+.formulario {
+  width: 53%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5px 5px;
+  gap: 10px;
+}
+.nombre,
+.email,
+.mensaje {
+  width: 400px;
+  padding: 5px 0px;
+  border-radius: 5px;
+  border: 1px solid var(--rojo);
+}
+.mensaje {
+  resize: none;
+}
+.formulario__button {
+  width: 130px;
+  margin: 10px 0px;
+  padding: 15px;
+  background-color: var(--amarillo-gold);
+  text-transform: uppercase;
+}
+.form__a{
+  opacity: 0;
+}
+.footer__app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--negro);
+}
+.app__h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--tipo-titulo);
+  font-size: 1em;
+  color: var(--amarillo-gold);
+  margin: 20px 0px;
+}
+.google__play,
+.apple {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  border: 1px solid var(--blanco-arena);
+  border-radius: 5px;
+}
+.app__p {
+  color: var(--blanco-arena);
+  font-size: 0.8em;
+  font-family: var(--tipo-principal);
+}
+.footer__icon {
+  margin: 6px;
+  color: var(--amarillo-gold);
+}
+.footer__derechos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--negro);
+}
+.footer__derechos--p {
+  color: var(--blanco-arena);
+  font-size: 0.8em;
+  font-family: var(--tipo-principal);
+}
+/* ---------------MEDIAS QUERIES--------------- */
+@media screen and (min-width: 389px) and (max-width: 540px) {
+  /* ----------HEADER------------- */
+  .header {
+    width: 100%;
+    background-color: var(--blanco-arena);
+  }
+  .header__container {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .header__h1 {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  .nav__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__ul--li {
+    margin: 5px;
+    font-size: 0.6em;
+  }
+  /* --------------MAIN------------------ */
+  .contacto {
+    width: 100%;
+  }
+  .contacto__container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contacto__h2 {
+    font-size: 1.5em;
+    margin: 5px;
+  }
+  .contacto__direccion {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacto__box {
+    width: 100%;
+  }
+
+  /* ----------------FOOTER----------------- */
+
+  .footer__container {
+    display: block;
+    margin: 0 auto;
+  }
+  .footer__form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer__form--h3 {
+    font-size: 1.2em;
+  }
+  .nombre,
+  .email,
+  .mensaje {
+    width: 200px;
+    padding: 2px 0px;
+  }
+  .formulario__button {
+    width: 70px;
+    margin: 2px 0px;
+    padding: 2px;
+  }
+  .footer__app {
+    width: 100%;
+  }
+  .app__h4 {
+    font-size: 0.7em;
+    margin: 5px 0px;
+  }
+  .google__play,
+  .apple {
+    border: none;
+  }
+  .app__p {
+    font-size: 0.6em;
+  }
+  .footer__derechos--p {
+    display: none;
+  }
+}
+/* --------------------------------------------------------*/
+@media screen and (min-width: 541px) and (max-width: 768px) {
+  /*---------HEADER--------------- */
+  .header__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header__h1 {
+    font-size: 1em;
+  }
+  .nav__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__ul--li {
+    font-size: 0.7em;
+    margin: 6px;
+  }
+  
+  /* ------------------------MAIN-------------------------------- */
+  .contacto {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contacto__container {
+    width: 100%;
+  }
+  .contacto__h2 {
+    font-size: 1.6em;
+  }
+  .contacto__direccion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  /* ---------------------FOOTER----------------------------- */
+  .nombre,
+  .email,
+  .mensaje {
+    width: 250px;
+    padding: 3px;
+  }
+  .formulario__button {
+    width: 100px;
+    margin: 3px 0px;
+  }
+  .app__h4 {
+    font-size: 0.9em;
+  }
+  .footer__derechos--p {
+    display: none;
+  }
+}
+/* -------------------------------------------------------- */
+@media screen and (min-width: 769px) and (max-width: 960px) {
+  /* ---------------HEADER-------------- */
+  .header__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header__h1 {
+    font-size: 1.3em;
+  }
+  .nav__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__ul--li {
+    font-size: 1em;
+    margin: 5px;
+  }
+
+  /* ------------------MAIN-------------------------*/
+
+  .contacto__direccion {
+    width: 100%;
+  }
+  /* -------------------FOOTER----------------------- */
+
+  .nombre,
+  .email,
+  .mensaje {
+    width: 290px;
+  }
+  .formulario__button {
+    width: 90px;
+  }
+  .footer__derechos--p {
+    font-size: 0.6em;
+  }
+}
