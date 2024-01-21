@@ -529,6 +529,14 @@
     width: 100%;
     margin: auto;
   }
+  .inicio__div--img .inicio__img{
+    width: calc(100% / 4 - 20px);
+  }
+  .inicio__div--img .punto{
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+  }
   .inicio__p {
     text-align: center;
     padding: 5px;
