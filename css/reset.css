@@ -73,7 +73,6 @@ body {
   font-size: 100%;
   font-family: var(--tipo-principal);
   line-height: 1.4em;
-  font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
